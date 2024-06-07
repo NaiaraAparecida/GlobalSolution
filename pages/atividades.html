@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salve o Oceano</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Salve o Oceano</a>
+        <span class="navbar-text text-white ml-3">
+            Pontos: <span id="navPoints">150</span>
+        </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="./atividades.html">Atividades</a></li>
+                <li class="nav-item"><a class="nav-link" href="./loja.html">Loja</a></li>
+                <li class="nav-item"><a class="nav-link" href="./perfil.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="jumbotron jumbotron-fluid text-center bg-image">
+        <div class="container">
+            <h1 class="display-4">Salve o Oceano</h1>
+            <p class="lead">Participe das atividades e ganhe pontos para trocar na loja!</p>
+        </div>
+    </header>
+
+<!-- Seção das Atividades -->
+    <section id="activities" class="container py-5">
+        <h2 class="text-center">Atividades</h2>
+
+    <!-- Atividade 1 -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="../img/LimpezaPraia.jpg" alt="Pessoas limpando uma praia">
+                    <div class="card-body">
+                        <h5 class="card-title">Limpeza de Praia</h5>
+                        <p class="card-text">Ajude a limpar uma praia local e ganhe 50 pontos.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#submitEvidenceModal">Enviar Evidência</button>
+                    </div>
+                </div>
+            </div>
+    <!-- Atividade 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="../img/Reciclagem.jpg" alt="Itens reciclagens">
+                    <div class="card-body">
+                        <h5 class="card-title">Reciclagem Costeira</h5>
+                        <p class="card-text">Participe de uma iniciativa de reciclagem costeira e ganhe 100 pontos.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#submitEvidenceModal">Enviar Evidência</button>
+                    </div>
+                </div>
+            </div>
+    <!-- Atividade 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="../img/Manguezais.jpg" alt="Maguezais platandos">
+                    <div class="card-body">
+                        <h5 class="card-title">Plantio de Manguezais</h5>
+                        <p class="card-text">Junte-se a uma equipe de plantio de manguezais e ganhe 150 pontos.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#submitEvidenceModal">Enviar Evidência</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Replicar para outras atividades -->
+        </div>
+    </section>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salve o Oceano</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Salve o Oceano</a>
+        <span class="navbar-text text-white ml-3">
+            Pontos: <span id="navPoints">150</span>
+        </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/atividades.html">Atividades</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/loja.html">Loja</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/perfil.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="jumbotron jumbotron-fluid text-center bg-image">
+        <div class="container">
+            <h1 class="display-4">Salve o Oceano</h1>
+            <p class="lead">Participe das atividades e ganhe pontos para trocar na loja!</p>
+        </div>
+    </header>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="container py-5">
+        <h2 class="text-center">Sobre a Iniciativa</h2>
+        <p class="text-center">Nosso objetivo é promover a conscientização sobre a importância de proteger nossos oceanos. Participe das atividades, ganhe pontos e ajude a salvar o oceano!</p>
+    </section>
+
+
+    <!-- Submiter as Evidências -->
+    <div class="modal fade" id="submitEvidenceModal" tabindex="-1" role="dialog" aria-labelledby="submitEvidenceModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="submitEvidenceModalLabel">Enviar Evidência</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="activity">Atividade</label>
+                            <select class="form-control" id="activity" required>
+                                <option>Limpeza de Praia</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="evidence">Foto da Atividade</label>
+                            <input type="file" class="form-control-file" id="evidence" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+        &copy; 2024 Salve o Oceano. Todos os direitos reservados.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

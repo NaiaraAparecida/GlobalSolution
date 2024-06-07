@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salve o Oceano</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Salve o Oceano</a>
+        <span class="navbar-text text-white ml-3">
+            Pontos: <span id="navPoints">150</span>
+        </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="./atividades.html">Atividades</a></li>
+                <li class="nav-item"><a class="nav-link" href="./loja.html">Loja</a></li>
+                <li class="nav-item"><a class="nav-link" href="./perfil.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="jumbotron jumbotron-fluid text-center bg-image">
+        <div class="container">
+            <h1 class="display-4">Salve o Oceano</h1>
+            <p class="lead">Participe das atividades e ganhe pontos para trocar na loja!</p>
+        </div>
+    </header>
+    <!-- Seção dos Contatos -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center">Contato</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" class="form-control" id="name" name='name' required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name='Email' required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea class="form-control" id="message" rows="4" name='Mensagem' required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>

@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.bg-image {
+    background: url('../img/pexels-belle-co-99483-847393.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+
+:focus {
+    outline: 2px solid blue;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+
+a:hover {
+    text-decoration: none
+}
+
+input[type='text'],
+input[type='password'] {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%
+}
